@@ -1,0 +1,28 @@
+@import 'styles/common';
+
+.btn {
+  @extend .clearStyles, .flexCenter;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: $white;
+  border-radius: 40px;
+  position: relative;
+  background: $premBtnGradient;
+  cursor: pointer;
+  transition: scale 0.25s ease-in-out;
+
+  &::before {
+    @extend .clearStyles, .flexCenter;
+    content: attr(data-label);
+    position: absolute;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background-color: $black;
+    border-radius: inherit;
+  }
+
+  &:hover {
+    @extend .hue;
+    scale: 1.05;
+  }
+}

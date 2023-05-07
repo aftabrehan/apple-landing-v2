@@ -99,6 +99,15 @@
   }
 }
 
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
 // classes
 .blowUp {
   animation: blowUp 0.25s ease-in-out forwards;
@@ -142,4 +151,8 @@
 
 .slideFromRight {
   animation: slideFromRight 0.25s ease-in-out forwards;
+}
+
+.hue {
+  animation: hue 3s ease-in-out infinite;
 }
