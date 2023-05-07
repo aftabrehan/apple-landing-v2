@@ -1,0 +1,26 @@
+@import 'styles/common';
+
+.header {
+  @extend .flexCenter;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 45px;
+  gap: 3rem;
+  background-color: $headerBg;
+  backdrop-filter: saturate(180%) blur(20px);
+
+  a {
+    font-size: 0.75rem;
+    color: $headerTextClr;
+    cursor: pointer;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  svg {
+    cursor: pointer;
+  }
+}
