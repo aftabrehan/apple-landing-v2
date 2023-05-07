@@ -3,8 +3,8 @@
 .container {
   @extend .flexCenterCol;
   width: 100%;
-  gap: 2rem;
   padding: 8rem;
+  gap: 3rem;
   background: $black;
 
   h1 {

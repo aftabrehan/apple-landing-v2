@@ -1,0 +1,77 @@
+@import 'styles/common';
+
+.footer {
+  @extend .flexCenterCol;
+  width: 100%;
+  background-color: $footerBg;
+}
+
+.content {
+  @extend .flexCenterCol;
+  width: 100%;
+  max-width: 1400px;
+  gap: 3rem;
+  padding: 2rem 0;
+
+  p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: $secondaryGray;
+
+    a {
+      color: $primaryBlue;
+    }
+  }
+
+  a {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: $secondaryGray;
+
+    &:hover {
+      color: $primaryBlue;
+      text-decoration: underline;
+    }
+  }
+}
+
+.descriptionContainer {
+  @extend .flexColStart;
+  gap: 1rem;
+
+  .divider {
+    margin-top: 1rem;
+  }
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 2px solid $tBlack;
+}
+
+.linksContainer {
+  border: 1px solid red;
+}
+
+.infoContainer {
+  @extend .flexColStart;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.bottomLine {
+  @extend .spaceBetween;
+  width: 100%;
+}
+
+.flatLinks {
+  @extend .flexCenter;
+
+  a {
+    padding: 0 1rem;
+
+    &:not(:last-of-type) {
+      border-right: 2px solid $tBlack;
+    }
+  }
+}

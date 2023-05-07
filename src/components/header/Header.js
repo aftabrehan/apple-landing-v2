@@ -15,7 +15,6 @@ const Header = () => {
     'AirPods',
     'TV & Home',
     'Only on Apple',
-    'Entertainment',
     'Accessories',
     'Support',
   ]
