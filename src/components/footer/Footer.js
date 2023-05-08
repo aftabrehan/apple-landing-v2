@@ -11,10 +11,91 @@ const Footer = () => {
     'Site Map',
   ]
 
+  const shopAndLearn = [
+    'Store',
+    'Mac',
+    'iPad',
+    'iPhone',
+    'Watch',
+    'AirPods',
+    'TV & Home',
+    'AirTag',
+    'Accessories',
+    'Gift Cards',
+  ]
+
+  const services = [
+    'Apple Music',
+    'Apple TV+',
+    'Apple Fitness+',
+    'Apple News+',
+    'Apple Arcade',
+    'iCloud',
+    'Apple One',
+    'Apple Card',
+    'Apple Books',
+    'Apple Podcasts',
+    'App Store',
+  ]
+
+  const account = ['Manage Your Apple ID', 'Apple Store Account', 'iCloud.com']
+
+  const appleStore = [
+    'Find a Store',
+    'Genius Bar',
+    'Today at Apple',
+    'Apple Camp',
+    'Apple Store App',
+    'Refurbished and Clearance',
+    'Financing',
+    'Apple Trade In',
+    'Order Status',
+    'Shopping Help',
+  ]
+
+  const forBusiness = ['Apple and Business', 'Shop for Business']
+
+  const forEducation = [
+    'Apple and Education',
+    'Shop for K-12',
+    'Shop for College',
+  ]
+
+  const forHealthCare = [
+    'Apple in Healthcare',
+    'Health on Apple Watch',
+    'Health Records on iPhone',
+  ]
+
+  const forGovernment = [
+    'Shop for Government',
+    'Shop for Veterans and Military',
+  ]
+
+  const appleValues = [
+    'Accessibility',
+    'Education',
+    'Environment',
+    'Inclusion and Diversity',
+    'Privacy',
+    'Racial Equity and Justice',
+    'Supplier Responsibility',
+  ]
+
+  const aboutApple = [
+    'Newsroom',
+    'Apple Leadership',
+    'Career Opportunities',
+    'Investors',
+    'Ethics & Compliance',
+    'Events',
+    'Contact Apple',
+  ]
+
   return (
     <footer className={stl.footer}>
       <div className={stl.content}>
-        <div className={stl.descriptionContainer}>
+        <div className={stl.descriptionWrapper}>
           <p>
             To access and use all the features of Apple Card, you must add Apple
             Card to Wallet on an iPhone or iPad with the latest version of iOS
@@ -33,9 +114,119 @@ const Footer = () => {
           <div className={stl.divider} />
         </div>
 
-        <div className={stl.linksContainer}></div>
+        <div className={stl.linksWrapper}>
+          <div className={stl.linksContainer}>
+            <div className={stl.linksBox}>
+              <h5>Shop and Learn</h5>
 
-        <div className={stl.infoContainer}>
+              {shopAndLearn.map(link => (
+                <Link key={link} href="/">
+                  {link}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className={stl.linksContainer}>
+            <div className={stl.linksBox}>
+              <h5>Services</h5>
+
+              {services.map(link => (
+                <Link key={link} href="/">
+                  {link}
+                </Link>
+              ))}
+            </div>
+
+            <div className={stl.linksBox}>
+              <h5>Account</h5>
+
+              {account.map(link => (
+                <Link key={link} href="/">
+                  {link}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className={stl.linksContainer}>
+            <div className={stl.linksBox}>
+              <h5>Apple Store</h5>
+
+              {appleStore.map(link => (
+                <Link key={link} href="/">
+                  {link}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className={stl.linksContainer}>
+            <div className={stl.linksBox}>
+              <h5>For Business</h5>
+
+              {forBusiness.map(link => (
+                <Link key={link} href="/">
+                  {link}
+                </Link>
+              ))}
+            </div>
+
+            <div className={stl.linksBox}>
+              <h5>For Education</h5>
+
+              {forEducation.map(link => (
+                <Link key={link} href="/">
+                  {link}
+                </Link>
+              ))}
+            </div>
+
+            <div className={stl.linksBox}>
+              <h5>For Healthcare</h5>
+
+              {forHealthCare.map(link => (
+                <Link key={link} href="/">
+                  {link}
+                </Link>
+              ))}
+            </div>
+
+            <div className={stl.linksBox}>
+              <h5>For Government</h5>
+
+              {forHealthCare.map(link => (
+                <Link key={link} href="/">
+                  {link}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className={stl.linksContainer}>
+            <div className={stl.linksBox}>
+              <h5>Apple Values</h5>
+
+              {appleValues.map(link => (
+                <Link key={link} href="/">
+                  {link}
+                </Link>
+              ))}
+            </div>
+
+            <div className={stl.linksBox}>
+              <h5>About Apple</h5>
+
+              {aboutApple.map(link => (
+                <Link key={link} href="/">
+                  {link}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className={stl.infoWrapper}>
           <p>
             More ways to shop: <Link href="/">Find an Apple Store</Link> or
             other

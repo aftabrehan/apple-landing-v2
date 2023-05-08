@@ -11,7 +11,7 @@
   width: 100%;
   max-width: 1400px;
   gap: 3rem;
-  padding: 2rem 0;
+  padding: 2rem;
 
   p {
     font-size: 0.8rem;
@@ -35,7 +35,7 @@
   }
 }
 
-.descriptionContainer {
+.descriptionWrapper {
   @extend .flexColStart;
   gap: 1rem;
 
@@ -49,11 +49,36 @@
   border-bottom: 2px solid $tBlack;
 }
 
-.linksContainer {
-  border: 1px solid red;
+.linksWrapper {
+  @extend .spaceBetween;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
 }
 
-.infoContainer {
+.linksContainer {
+  @extend .flexColStart;
+  gap: 1.5rem;
+}
+
+.linksBox {
+  @extend .flexColStart;
+  gap: 0.75rem;
+
+  h5 {
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+
+  a {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: $lightGray;
+  }
+}
+
+.infoWrapper {
   @extend .flexColStart;
   width: 100%;
   gap: 0.5rem;
