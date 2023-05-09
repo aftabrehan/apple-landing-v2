@@ -4,12 +4,12 @@
   all: unset;
   padding: 0.25rem 1rem;
   border-radius: 8px;
-  color: white;
-  background-color: $primaryBlue;
+  font-size: 1.3rem;
+  color: $primaryBlue;
   cursor: pointer;
 
   &:hover {
-    opacity: 0.75;
+    text-decoration: underline;
   }
 
   &:active {

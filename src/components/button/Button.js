@@ -5,7 +5,7 @@ import stl from './Button.module.scss'
 
 const Button = ({ label, onClick, customClass }) => (
   <button onClick={onClick} className={clsx(stl.btn, customClass)}>
-    {label}
+    {label} &nbsp; &gt;
   </button>
 )
 
