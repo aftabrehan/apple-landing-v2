@@ -1,0 +1,7 @@
+@import 'styles/common';
+
+.container {
+  @extend .flexCenterCol;
+  width: 100%;
+  gap: 0.25rem;
+}
