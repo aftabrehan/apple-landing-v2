@@ -1,0 +1,21 @@
+@import 'styles/common';
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: $white;
+
+  & > section {
+    padding-bottom: 0;
+    height: 624px;
+    background-size: cover;
+  }
+}
+
+.textBlack h1 {
+  color: $black;
+}

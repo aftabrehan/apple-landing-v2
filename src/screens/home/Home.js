@@ -1,7 +1,8 @@
 import Header from 'components/header'
 import Hero from 'components/hero'
 import Footer from 'components/footer'
-import Showcase from 'components/showcase'
+import Feature from 'components/feature'
+import FeatureGrid from 'components/feature-grid'
 
 import stl from './Home.module.scss'
 
@@ -9,7 +10,8 @@ const Home = () => (
   <div className={stl.wrapper}>
     <Header />
     <Hero />
-    <Showcase />
+    <Feature />
+    <FeatureGrid />
     <Footer />
   </div>
 )

@@ -6,12 +6,12 @@ import Button from 'components/button'
 import stl from './Showcase.module.scss'
 
 const Showcase = ({
-  title = 'MacBook Pro',
-  subTitle = 'Supercharged by M2 Pro and M2 Max.',
-  description = 'Available starting 1.24',
+  title,
+  subTitle,
+  description,
   primaryBtnLabel = 'Order Now',
   secondaryBtnLabel = 'Learn More',
-  imgSrc = '/assets/png/macbook-pro.png',
+  imgSrc,
   customClass,
 }) => (
   <section

@@ -229,8 +229,8 @@ const Footer = () => {
         <div className={stl.infoWrapper}>
           <p>
             More ways to shop: <Link href="/">Find an Apple Store</Link> or
-            other
-            <Link href="/">retailer</Link> near you. Or call 1-800-MY-APPLE.
+            other <Link href="/">retailer</Link> near you. Or call
+            1-800-MY-APPLE.
           </p>
           <div className={stl.divider} />
           <div className={stl.bottomLine}>

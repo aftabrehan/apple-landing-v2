@@ -9,6 +9,7 @@
   gap: 3rem;
   background-color: $headerBg;
   backdrop-filter: saturate(180%) blur(20px);
+  z-index: 1;
 
   a {
     font-size: 0.75rem;
