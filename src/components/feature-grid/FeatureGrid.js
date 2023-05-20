@@ -29,6 +29,7 @@ const mainShowcases = [
     title: 'A gift for every wish.',
     description: 'Find something for everyone this Lunar New Year.',
     imgSrc: '/assets/png/gift.png',
+    customClass: stl.whiteDesc,
   },
   {
     title: 'Card',
