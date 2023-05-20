@@ -126,4 +126,23 @@
     padding: 1rem;
     gap: 1rem;
   }
+
+  .infoWrapper,
+  .linksWrapper {
+    flex-direction: column;
+    align-items: center;
+
+    * {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .flatLinks {
+    justify-content: center;
+
+    a {
+      border-right: none !important;
+    }
+  }
 }
