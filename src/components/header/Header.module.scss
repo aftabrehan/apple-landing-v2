@@ -1,15 +1,19 @@
 @import 'styles/common';
 
 .header {
-  @extend .flexCenter;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   position: fixed;
   top: 0;
   width: 100vw;
   height: 45px;
   gap: 3rem;
+  padding: 0.85rem;
   background-color: $headerBg;
   backdrop-filter: saturate(180%) blur(20px);
   z-index: 1;
+  transition: background-color 0.25s ease-in-out, height 0.25s ease-in-out;
 
   a {
     font-size: 0.75rem;
@@ -23,5 +27,70 @@
 
   svg {
     cursor: pointer;
+  }
+}
+
+.links,
+.icons {
+  @extend .flexCenter;
+  gap: 3rem;
+}
+
+.hamburgerIcon {
+  @extend .clearStyles, .flexCenter;
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    &,
+    .links,
+    .icons {
+      gap: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .hamburgerIcon {
+    display: flex;
+  }
+
+  .expanded {
+    height: 100vh;
+    background-color: $black;
+    justify-content: flex-end;
+
+    & > svg,
+    .icons > svg {
+      display: none;
+    }
+
+    .links {
+      position: absolute;
+      left: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 3rem;
+
+      a {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $white;
+        opacity: 0;
+        animation: fadeIn 0.25s 0.15s ease-in-out forwards;
+      }
+    }
   }
 }
