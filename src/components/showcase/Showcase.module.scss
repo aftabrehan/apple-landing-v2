@@ -22,7 +22,7 @@
     font-size: 1.6rem;
     color: $white;
     line-height: 1;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
   }
 
@@ -31,5 +31,17 @@
     font-weight: 200;
     color: $secondaryGray;
     text-align: center;
+  }
+}
+
+@media (max-width: 468px) {
+  .container {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+    }
   }
 }
