@@ -24,21 +24,22 @@ const Footer = () => {
     'Gift Cards',
   ]
 
-  const services = [
-    'Apple Music',
-    'Apple TV+',
-    'Apple Fitness+',
-    'Apple News+',
-    'Apple Arcade',
-    'iCloud',
-    'Apple One',
-    'Apple Card',
-    'Apple Books',
-    'Apple Podcasts',
-    'App Store',
-  ]
+  const appleWallet = ['Wallet', 'Apple Card', 'Apple Pay', 'Apple Cash']
 
   const account = ['Manage Your Apple ID', 'Apple Store Account', 'iCloud.com']
+
+  const entertainment = [
+    'Apple One',
+    'Apple TV+',
+    'Apple Music',
+    'Apple News+',
+    'Apple Arcade',
+    'Apple Fitness+',
+    'Apple News+',
+    'Apple Podcasts',
+    'Apple Books',
+    'App Store',
+  ]
 
   const appleStore = [
     'Find a Store',
@@ -46,9 +47,10 @@ const Footer = () => {
     'Today at Apple',
     'Apple Camp',
     'Apple Store App',
-    'Refurbished and Clearance',
-    'Financing',
+    'Certified Refurbished',
     'Apple Trade In',
+    'Financing',
+    'Carrier Deals at Apple',
     'Order Status',
     'Shopping Help',
   ]
@@ -97,6 +99,24 @@ const Footer = () => {
       <div className={stl.content}>
         <div className={stl.descriptionWrapper}>
           <p>
+            1. Trade-in values will vary based on the condition, year, and
+            configuration of your eligible trade-in device. Not all devices are
+            eligible for credit. You must be at least 18 years old to be
+            eligible to trade in for credit or for an Apple Gift Card. Trade-in
+            value may be applied toward qualifying new device purchase, or added
+            to an Apple Gift Card. Actual value awarded is based on receipt of a
+            qualifying device matching the description provided when estimate
+            was made. Sales tax may be assessed on full value of a new device
+            purchase. In-store trade-in requires presentation of a valid photo
+            ID (local law may require saving this information). Offer may not be
+            available in all stores, and may vary between in-store and online
+            trade-in. Some stores may have additional requirements. Apple or its
+            trade-in partners reserve the right to refuse or limit quantity of
+            any trade-in transaction for any reason. More details are available
+            from Apple’s trade-in partner for trade-in and recycling of eligible
+            devices. Restrictions and limitations may apply.
+          </p>
+          <p>
             To access and use all the features of Apple Card, you must add Apple
             Card to Wallet on an iPhone or iPad with the latest version of iOS
             or iPadOS. Update to the latest version by going to Settings &gt;
@@ -108,8 +128,16 @@ const Footer = () => {
             Branch.
           </p>
           <p>
-            Learn more about how Apple Card applications are evaluated at
-            support.apple.com/kb/HT209218.
+            Learn more about how Apple Card applications are evaluated at{' '}
+            <a href="https://support.apple.com/en-us/HT209218">
+              support.apple.com/kb/HT209218
+            </a>
+            .
+          </p>
+          <p>A subscription is required for Apple TV+.</p>
+          <p>
+            Major League Baseball trademarks and copyrights are used with
+            permission of MLB Advanced Media, L.P. All rights reserved.
           </p>
           <div className={stl.divider} />
         </div>
@@ -125,13 +153,23 @@ const Footer = () => {
                 </Link>
               ))}
             </div>
+
+            <div className={stl.linksBox}>
+              <h5>Apple Wallet</h5>
+
+              {appleWallet.map(link => (
+                <Link key={link} href="/">
+                  {link}
+                </Link>
+              ))}
+            </div>
           </div>
 
           <div className={stl.linksContainer}>
             <div className={stl.linksBox}>
-              <h5>Services</h5>
+              <h5>Account</h5>
 
-              {services.map(link => (
+              {account.map(link => (
                 <Link key={link} href="/">
                   {link}
                 </Link>
@@ -139,9 +177,9 @@ const Footer = () => {
             </div>
 
             <div className={stl.linksBox}>
-              <h5>Account</h5>
+              <h5>Entertainment</h5>
 
-              {account.map(link => (
+              {entertainment.map(link => (
                 <Link key={link} href="/">
                   {link}
                 </Link>
@@ -195,7 +233,7 @@ const Footer = () => {
             <div className={stl.linksBox}>
               <h5>For Government</h5>
 
-              {forHealthCare.map(link => (
+              {forGovernment.map(link => (
                 <Link key={link} href="/">
                   {link}
                 </Link>
@@ -229,7 +267,7 @@ const Footer = () => {
         <div className={stl.infoWrapper}>
           <p>
             More ways to shop: <Link href="/">Find an Apple Store</Link> or
-            other <Link href="/">retailer</Link> near you. Or call
+            other <Link href="/">other retailer</Link> near you. Or call
             1-800-MY-APPLE.
           </p>
           <div className={stl.divider} />

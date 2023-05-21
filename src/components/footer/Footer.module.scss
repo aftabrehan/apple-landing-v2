@@ -9,14 +9,15 @@
 .content {
   @extend .flexCenterCol;
   width: 100%;
-  max-width: 1400px;
-  gap: 3rem;
+  max-width: 1024px;
+  gap: 2rem;
   padding: 2rem;
 
   p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 300;
     color: $secondaryGray;
+    line-height: 1.5;
 
     a {
       color: $primaryBlue;
@@ -40,7 +41,7 @@
   gap: 1rem;
 
   .divider {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -67,12 +68,12 @@
   gap: 0.75rem;
 
   h5 {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 400;
   }
 
   a {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 300;
     color: $lightGray;
   }
