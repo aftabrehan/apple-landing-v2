@@ -1,7 +1,6 @@
 import Head from 'next/head'
 
 import Header from 'components/header'
-import Hero from 'components/hero'
 import Footer from 'components/footer'
 import Feature from 'components/feature'
 import FeatureGrid from 'components/feature-grid'
@@ -15,7 +14,6 @@ const Home = () => (
     </Head>
 
     <Header />
-    <Hero />
     <Feature />
     <FeatureGrid />
     <Footer />

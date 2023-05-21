@@ -43,6 +43,10 @@
   .divider {
     margin-top: 0.5rem;
   }
+
+  & > p > a {
+    color: $black;
+  }
 }
 
 .divider {
@@ -83,6 +87,10 @@
   @extend .flexColStart;
   width: 100%;
   gap: 0.5rem;
+
+  & > p > a {
+    text-decoration: underline;
+  }
 }
 
 .bottomLine {
