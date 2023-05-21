@@ -20,7 +20,7 @@
     line-height: 1.5;
 
     a {
-      color: $primaryBlue;
+      color: $linkColor;
     }
   }
 
@@ -30,7 +30,7 @@
     color: $secondaryGray;
 
     &:hover {
-      color: $primaryBlue;
+      color: $linkColor;
       text-decoration: underline;
     }
   }
