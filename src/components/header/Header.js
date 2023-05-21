@@ -20,7 +20,7 @@ const Header = () => {
     'Watch',
     'AirPods',
     'TV & Home',
-    'Only on Apple',
+    'Entertainment',
     'Accessories',
     'Support',
   ]
