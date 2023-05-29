@@ -4,38 +4,39 @@ import stl from './FeatureGrid.module.scss'
 
 const mainShowcases = [
   {
-    title: 'Creativity and community.',
-    subTitle: 'Woven together.',
-    description: 'Explore the new Black Unity watch band and matching face.',
-    imgSrc: '/assets/png/community.png',
+    title: '<>Trade In',
+    description: "Upgrade and save. It's that easy",
+    imgSrc: '/assets/png/trade-in.png',
   },
   {
-    title: 'WATCH',
-    description: 'A healthy leap ahead.',
+    title: 'WWDC23',
+    description:
+      'Apple Worldwide Developers Conference. Join us online June 5‑9.',
+    imgSrc: '/assets/png/conference.png',
+    isDark: true,
+    textBoxClass: stl.conference,
+  },
+  {
+    title: '<>Watch',
+    description: 'Pride is in the air.',
     imgSrc: '/assets/png/watch.png',
   },
   {
-    title: 'iPhone 14 Pro',
-    description: 'Pro. Beyond.',
-    imgSrc: '/assets/png/iphone.png',
-  },
-  {
-    title: 'iPhone 14',
-    description: 'Big and bigger.',
-    imgSrc: '/assets/png/iphones.png',
-    customClass: stl.textBlack,
-  },
-  {
-    title: 'A gift for every wish.',
-    description: 'Find something for everyone this Lunar New Year.',
-    imgSrc: '/assets/png/gift.png',
-    customClass: stl.whiteDesc,
-  },
-  {
-    title: 'Card',
+    title: '<>Card',
     description: 'Get up to 3% Daily Cash back with every purchase.',
     imgSrc: '/assets/png/card.png',
-    customClass: stl.textBlack,
+  },
+  {
+    title: 'Your health data. In your control.',
+    description: 'Privacy. That’s iPhone.',
+    imgSrc: '/assets/png/privacy-control.png',
+    isDark: true,
+  },
+  {
+    title: 'Macbook Pro',
+    description: 'Supercharged by M2 Pro and M2 Pro Max.',
+    imgSrc: '/assets/png/macbook-pro.png',
+    isDark: true,
   },
 ]
 

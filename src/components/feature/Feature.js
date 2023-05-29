@@ -4,22 +4,22 @@ import stl from './Feature.module.scss'
 
 const mainShowcases = [
   {
-    title: 'MacBook Pro',
-    subTitle: 'Supercharged by M2 Pro and M2 Max.',
-    description: 'Available starting 1.24',
-    imgSrc: '/assets/png/macbook-pro.png',
+    title: 'iPhone 14 Pro',
+    subTitle: 'Pro. Beyond.',
+    imgSrc: '/assets/png/iphone-14-pro.png',
+    isDark: true,
   },
   {
-    title: 'Mac mini',
-    subTitle: 'Supercharged by M2 Pro and M2 Max.',
-    description: 'Available starting 1.24',
-    imgSrc: '/assets/png/mac-mini.png',
+    title: 'iPhone 14',
+    subTitle: 'Wonderfull.',
+    imgSrc: '/assets/png/iphone-14.png',
   },
   {
-    title: 'HomePod',
-    subTitle: 'Profound sound.',
-    description: 'Available starting 2.3',
-    imgSrc: '/assets/png/homepod.png',
+    title: 'iPad Pro',
+    subTitle: 'Supercharged by <>',
+    imgSrc: '/assets/png/ipad-pro.png',
+    isDark: true,
+    textBoxClass: stl.ipadPro,
   },
 ]
 
