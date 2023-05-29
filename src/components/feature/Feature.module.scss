@@ -3,5 +3,12 @@
 .container {
   @extend .flexCenterCol;
   width: 100%;
-  gap: 0.25rem;
+}
+
+.ipadPro {
+  width: max-content;
+  position: absolute;
+  left: 22%;
+  top: 50%;
+  translate: 0 -50%;
 }
