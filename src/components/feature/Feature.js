@@ -16,7 +16,11 @@ const mainShowcases = [
   },
   {
     title: 'iPad Pro',
-    subTitle: 'Supercharged by <>',
+    subTitle: (
+      <>
+        Supercharged by <span className={stl.m2}></span>
+      </>
+    ),
     imgSrc: '/assets/png/ipad-pro.png',
     isDark: true,
     textBoxClass: stl.ipadPro,

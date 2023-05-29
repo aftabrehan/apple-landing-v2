@@ -32,7 +32,6 @@ const Footer = () => {
     'Apple One',
     'Apple TV+',
     'Apple Music',
-    'Apple News+',
     'Apple Arcade',
     'Apple Fitness+',
     'Apple News+',
