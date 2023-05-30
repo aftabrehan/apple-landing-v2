@@ -5,10 +5,20 @@
   width: 100%;
 }
 
+.m2 {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: -13px;
+  width: 48px;
+  height: 48px;
+  background-image: url('/assets/png/m2.png');
+  background-position: center;
+  background-size: cover;
+}
+
 .ipadPro {
-  width: max-content;
-  position: absolute;
-  left: 22%;
-  top: 50%;
-  translate: 0 -50%;
+  align-self: flex-start;
+  position: relative;
+  margin-left: 8vw;
+  top: 200px;
 }

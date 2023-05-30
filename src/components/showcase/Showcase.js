@@ -34,8 +34,8 @@ const Showcase = ({
 )
 
 Showcase.propTypes = {
-  title: PropTypes.string,
-  subTitle: PropTypes.string,
+  title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  subTitle: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   description: PropTypes.string,
   primaryBtnLabel: PropTypes.string,
   secondaryBtnLabel: PropTypes.string,
