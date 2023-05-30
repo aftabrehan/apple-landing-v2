@@ -16,18 +16,39 @@
   }
 }
 
-@media (max-width: 768px) {
-  .container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding: 0.5rem 0;
-  }
-}
-
 .conference {
   width: max-content;
   position: absolute;
   left: 50%;
   bottom: 10%;
   translate: -50%;
+}
+
+.backGroundImage {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 6px;
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.appleDarkLogo {
+  @extend .backGroundImage;
+  background-image: url('/assets/png/apple-dark-logo.png');
+}
+
+.appleLightLogo {
+  @extend .backGroundImage;
+  background-image: url('/assets/png/apple-light-logo.png');
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0.5rem 0;
+  }
 }

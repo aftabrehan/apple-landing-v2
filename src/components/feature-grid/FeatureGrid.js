@@ -4,12 +4,22 @@ import stl from './FeatureGrid.module.scss'
 
 const mainShowcases = [
   {
-    title: '<>Trade In',
+    title: (
+      <>
+        <span className={stl.appleDarkLogo} />
+        Trade In
+      </>
+    ),
     description: "Upgrade and save. It's that easy",
     imgSrc: '/assets/png/trade-in.png',
   },
   {
-    title: 'WWDC23',
+    title: (
+      <>
+        <span className={stl.appleLightLogo} />
+        WWDC23
+      </>
+    ),
     description:
       'Apple Worldwide Developers Conference. Join us online June 5‑9.',
     imgSrc: '/assets/png/conference.png',
@@ -17,12 +27,22 @@ const mainShowcases = [
     textBoxClass: stl.conference,
   },
   {
-    title: '<>Watch',
+    title: (
+      <>
+        <span className={stl.appleDarkLogo} />
+        Watch
+      </>
+    ),
     description: 'Pride is in the air.',
     imgSrc: '/assets/png/watch.png',
   },
   {
-    title: '<>Card',
+    title: (
+      <>
+        <span className={stl.appleDarkLogo} />
+        Card
+      </>
+    ),
     description: 'Get up to 3% Daily Cash back with every purchase.',
     imgSrc: '/assets/png/card.png',
   },
