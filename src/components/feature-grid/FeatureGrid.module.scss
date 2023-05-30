@@ -51,3 +51,12 @@
     padding: 0.5rem 0;
   }
 }
+
+@media (max-width: 648px) {
+  .appleLightLogo,
+  .appleDarkLogo {
+    margin-bottom: 4px;
+    width: 30px;
+    height: 30px;
+  }
+}
