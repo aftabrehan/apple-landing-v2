@@ -8,6 +8,7 @@ export const useWindow = () => {
       setWindowSize({
         width: window.innerWidth,
         height: window.innerHeight,
+        isSmallDes: window.innerWidth < 1078,
         isTablet: window.innerWidth < 960,
         isMobile: window.innerWidth < 648,
       })

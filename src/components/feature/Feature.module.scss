@@ -21,4 +21,9 @@
   position: relative;
   margin-left: 8vw;
   top: 200px;
+
+  @media (max-width: 1078px) {
+    align-self: center;
+    position: static;
+  }
 }

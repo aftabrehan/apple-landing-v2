@@ -12,13 +12,19 @@ const Showcase = ({
   primaryBtnLabel = 'Order Now',
   secondaryBtnLabel = 'Learn More',
   imgSrc,
+  tabletImgSrc,
   isDark,
   isSmall,
+  isSmallDes,
   customClass,
   textBoxClass,
 }) => (
   <section
-    style={{ backgroundImage: `url(${imgSrc})` }}
+    style={{
+      backgroundImage: `url(${
+        isSmallDes && tabletImgSrc ? tabletImgSrc : imgSrc
+      })`,
+    }}
     className={clsx(
       stl.container,
       isDark && stl.dark,
@@ -46,8 +52,10 @@ Showcase.propTypes = {
   primaryBtnLabel: PropTypes.string,
   secondaryBtnLabel: PropTypes.string,
   imgSrc: PropTypes.string,
+  tabletImgSrc: PropTypes.string,
   isDark: PropTypes.bool,
   isSmall: PropTypes.bool,
+  isSmallDes: PropTypes.bool,
   customClass: PropTypes.string,
   textBoxClass: PropTypes.string,
 }
