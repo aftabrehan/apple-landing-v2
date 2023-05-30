@@ -5,7 +5,7 @@ A modern and responsive landing page built with Next.js, ReactJS, SCSS, and amaz
 ### Preview
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/93012310/236666301-a8d66b58-cad0-4a47-bc64-1dcff0646904.png" />
+  <img width="2055" alt="Screenshot 2023-05-31 at 1 32 56 AM" src="https://github.com/aftabrehan/apple-landing-v2/assets/93012310/00e7aa5f-f4ab-4e7c-9fa0-9a49357e37d1">
 </div>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
