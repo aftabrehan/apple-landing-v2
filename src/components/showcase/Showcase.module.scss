@@ -18,7 +18,6 @@
   gap: 1rem;
 
   h1 {
-    max-width: 470px;
     font-size: 56px;
     line-height: 1;
     font-weight: 600;
@@ -46,6 +45,21 @@
 .dark {
   background-color: $black;
   color: $white;
+}
+
+.small {
+  h1 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: 0.016em;
+  }
 }
 
 @media (max-width: 468px) {

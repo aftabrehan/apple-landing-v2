@@ -24,25 +24,24 @@
   translate: -50%;
 }
 
-.backGroundImage {
+@mixin backGroundImage($url, $size) {
+  width: $size;
+  height: $size;
+  margin-bottom: 6px;
   display: inline-block;
   vertical-align: bottom;
-  margin-bottom: 6px;
-  width: 48px;
-  height: 48px;
+  background-image: url($url);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .appleDarkLogo {
-  @extend .backGroundImage;
-  background-image: url('/assets/png/apple-dark-logo.png');
+  @include backGroundImage('/assets/png/apple-dark-logo.png', 32px);
 }
 
 .appleLightLogo {
-  @extend .backGroundImage;
-  background-image: url('/assets/png/apple-light-logo.png');
+  @include backGroundImage('/assets/png/apple-light-logo.png', 36px);
 }
 
 @media (max-width: 768px) {

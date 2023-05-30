@@ -13,12 +13,18 @@ const Showcase = ({
   secondaryBtnLabel = 'Learn More',
   imgSrc,
   isDark,
+  isSmall,
   customClass,
   textBoxClass,
 }) => (
   <section
     style={{ backgroundImage: `url(${imgSrc})` }}
-    className={clsx(stl.container, isDark && stl.dark, customClass)}
+    className={clsx(
+      stl.container,
+      isDark && stl.dark,
+      isSmall && stl.small,
+      customClass
+    )}
   >
     <div className={clsx(stl.textBox, textBoxClass)}>
       <h1>{title}</h1>
@@ -36,11 +42,12 @@ const Showcase = ({
 Showcase.propTypes = {
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   subTitle: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  description: PropTypes.string,
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   primaryBtnLabel: PropTypes.string,
   secondaryBtnLabel: PropTypes.string,
   imgSrc: PropTypes.string,
   isDark: PropTypes.bool,
+  isSmall: PropTypes.bool,
   customClass: PropTypes.string,
   textBoxClass: PropTypes.string,
 }
