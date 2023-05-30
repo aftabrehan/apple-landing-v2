@@ -4,8 +4,8 @@
   @extend .flexColStart;
   align-items: center;
   width: 100%;
-  padding: 2rem 2rem 700px;
   height: 600px;
+  padding: 2rem 2rem 700px;
   color: $black;
   background-color: $white;
   background-repeat: no-repeat;
@@ -62,8 +62,11 @@
   }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 648px) {
   .container {
+    height: 600px;
+    padding-bottom: 4rem;
+
     h1 {
       font-size: 2rem;
     }
