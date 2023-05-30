@@ -1,15 +1,22 @@
 import { useState, useEffect } from 'react'
 
 export const useWindow = () => {
-  const [windowSize, setWindowSize] = useState({ width: null, height: null })
+  const [windowSize, setWindowSize] = useState({
+    width: null,
+    height: null,
+    isSmallDes: null,
+    isTablet: null,
+    isMobile: null,
+  })
 
   useEffect(() => {
     const handleResize = () =>
       setWindowSize({
         width: window.innerWidth,
         height: window.innerHeight,
-        isTablet: window.innerWidth < 960,
-        isMobile: window.innerWidth < 648,
+        isSmallDes: window.innerWidth >= 960 && window.innerWidth <= 1078,
+        isTablet: window.innerWidth >= 648 && window.innerWidth <= 960,
+        isMobile: window.innerWidth <= 648,
       })
 
     window.addEventListener('resize', handleResize)

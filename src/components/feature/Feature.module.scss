@@ -19,6 +19,20 @@
 .ipadPro {
   align-self: flex-start;
   position: relative;
-  margin-left: 8vw;
+  margin-left: 18vw;
   top: 200px;
+
+  @media (max-width: 1400px) {
+    margin-left: 12vw;
+  }
+
+  @media (max-width: 1190px) {
+    margin-left: 8vw;
+  }
+
+  @media (max-width: 1078px) {
+    align-self: center;
+    position: static;
+    margin-left: unset;
+  }
 }

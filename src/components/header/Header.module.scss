@@ -13,7 +13,7 @@
   background-color: $headerBg;
   backdrop-filter: saturate(180%) blur(20px);
   z-index: 1;
-  transition: background-color 0.25s ease-in-out, height 0.25s ease-in-out;
+  transition: background-color 0.35s ease-in-out, height 0.35s ease-in-out;
 
   a {
     font-size: 0.75rem;
@@ -89,7 +89,7 @@
         font-weight: 600;
         color: $white;
         opacity: 0;
-        animation: fadeIn 0.25s 0.15s ease-in-out forwards;
+        animation: fadeIn 0.35s 0.15s ease-in-out forwards;
       }
     }
   }

@@ -1,5 +1,7 @@
 import Showcase from 'components/showcase'
 
+import { useWindow } from 'lib/hooks'
+
 import stl from './FeatureGrid.module.scss'
 
 const mainShowcases = [
@@ -12,6 +14,7 @@ const mainShowcases = [
     ),
     description: "Upgrade and save. It's that easy",
     imgSrc: '/assets/png/trade-in.png',
+    mobileImgSrc: '/assets/png/trade-in-mobile.png',
   },
   {
     title: (
@@ -20,9 +23,9 @@ const mainShowcases = [
         WWDC23
       </>
     ),
-    description:
-      'Apple Worldwide Developers Conference. Join us online June 5‑9.',
-    imgSrc: '/assets/png/conference.png',
+    description: 'Watch online June 5 at 10:00 a.m. PT.',
+    imgSrc: '/assets/png/apple-conference.png',
+    mobileImgSrc: '/assets/png/apple-conference-mobile.png',
     isDark: true,
     textBoxClass: stl.conference,
   },
@@ -35,6 +38,7 @@ const mainShowcases = [
     ),
     description: 'Pride is in the air.',
     imgSrc: '/assets/png/watch.png',
+    mobileImgSrc: '/assets/png/watch-mobile.png',
   },
   {
     title: 'Macbook Pro',
@@ -43,14 +47,9 @@ const mainShowcases = [
     isDark: true,
   },
   {
-    title: (
-      <>
-        Your health data.
-        <br /> In your control.
-      </>
-    ),
-    description: 'Privacy. That’s iPhone.',
-    imgSrc: '/assets/png/privacy-control.png',
+    title: 'HomePod',
+    description: 'Profound sound.',
+    imgSrc: '/assets/png/homepod.png',
     isDark: true,
   },
   {
@@ -71,10 +70,18 @@ const mainShowcases = [
 ]
 
 const FeatureGrid = () => {
+  const { isSmallDes, isTablet, isMobile } = useWindow()
+
   return (
     <section className={stl.container}>
       {mainShowcases.map((showcase, i) => (
-        <Showcase key={i} {...showcase} isSmall />
+        <Showcase
+          key={i}
+          {...showcase}
+          isSmall
+          isSmallDes={isSmallDes || isTablet}
+          isMobile={isMobile}
+        />
       ))}
     </section>
   )
