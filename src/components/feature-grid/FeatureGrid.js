@@ -15,6 +15,7 @@ const mainShowcases = [
     description: "Upgrade and save. It's that easy",
     imgSrc: '/assets/png/trade-in.png',
     mobileImgSrc: '/assets/png/trade-in-mobile.png',
+    customBtns: ['See what your device is worth'],
   },
   {
     title: (
@@ -28,6 +29,7 @@ const mainShowcases = [
     mobileImgSrc: '/assets/png/apple-conference-mobile.png',
     isDark: true,
     textBoxClass: stl.conference,
+    customBtns: ['Learn More'],
   },
   {
     title: (
@@ -39,6 +41,7 @@ const mainShowcases = [
     description: 'Pride is in the air.',
     imgSrc: '/assets/png/watch.png',
     mobileImgSrc: '/assets/png/watch-mobile.png',
+    customBtns: ['Shop the new Pride Edition Sport Brand'],
   },
   {
     title: 'Macbook Pro',
@@ -66,6 +69,7 @@ const mainShowcases = [
       </>
     ),
     imgSrc: '/assets/png/card.png',
+    customBtns: ['Learn More', 'Apply Now'],
   },
 ]
 

@@ -1,7 +1,8 @@
 @import 'styles/common';
 
 .btn {
-  all: unset;
+  @extend .clearStyles, .flexCenter;
+  gap: 0.5rem;
   padding: 0.25rem 1rem;
   border-radius: 8px;
   font-size: 0.95rem;
