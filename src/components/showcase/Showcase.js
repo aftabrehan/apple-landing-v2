@@ -9,8 +9,8 @@ const Showcase = ({
   title,
   subTitle,
   description,
-  primaryBtnLabel = 'Order Now',
-  secondaryBtnLabel = 'Learn More',
+  primaryBtnLabel = 'Learn More',
+  secondaryBtnLabel = 'Buy',
   imgSrc,
   smallDesImgSrc,
   mobileImgSrc,
@@ -18,6 +18,7 @@ const Showcase = ({
   isSmall,
   isSmallDes,
   isMobile,
+  customBtns = [],
   customClass,
   textBoxClass,
 }) => (
@@ -42,8 +43,14 @@ const Showcase = ({
       <p>{description}</p>
 
       <div className={stl.btnsRow}>
-        <Button label={primaryBtnLabel} />
-        <Button label={secondaryBtnLabel} />
+        {customBtns.length ? (
+          customBtns.map(label => <Button key={label} label={label} />)
+        ) : (
+          <>
+            <Button label={primaryBtnLabel} />
+            <Button label={secondaryBtnLabel} />
+          </>
+        )}
       </div>
     </div>
   </section>
@@ -61,6 +68,7 @@ Showcase.propTypes = {
   isSmall: PropTypes.bool,
   isSmallDes: PropTypes.bool,
   isMobile: PropTypes.bool,
+  customBtns: PropTypes.array,
   customClass: PropTypes.string,
   textBoxClass: PropTypes.string,
 }
