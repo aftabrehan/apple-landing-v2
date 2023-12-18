@@ -1,44 +1,44 @@
-# Apple Landing Page
+# Apple Landing Page Clone
 
-A modern and responsive landing page built with Next.js, ReactJS, SCSS, and amazing libraries like Framer Motion, deployed with Vercel for fast and reliable performance.
+The Apple Landing v2 is a clone of the Apple landing page, created using React JS, Next.js, JavaScript, and Sass. I, as the only developer, have meticulously designed and implemented every aspect of the page. Although it is a single-page application, it is fully responsive and optimized for mobile and tablet devices. Throughout the project, I gained experience in incorporating responsive images that enhance the appearance of various devices. Feel free to explore the source code.
+
+| [View Project 🔥](https://aftabrehan.com/portfolio/apple-landing-page-clone) | [Live Preview 🚀](https://apple-landing-v2.vercel.app) |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------ |
 
 ### Preview
 
-<div align="center">
-  <img width="2055" alt="Screenshot 2023-05-31 at 1 32 56 AM" src="https://github.com/aftabrehan/apple-landing-v2/assets/93012310/00e7aa5f-f4ab-4e7c-9fa0-9a49357e37d1">
+<div>
+  <a href="https://aftabrehan.com/portfolio/apple-landing-page-clone">
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/65368aa4b17e4145bab052cfe52843cd-with-play.gif">
+  </a>
 </div>
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+|                                                                                                          The                                                                                                          |                                                                                                        Project                                                                                                        |                                                                                                         Shots                                                                                                         |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <div><a href="https://aftabrehan.com/portfolio/apple-landing-page-clone"><img style="max-width:220px;" src="https://aftabrehan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.eb097f32.png&w=1920&q=75"></a></div> | <div><a href="https://aftabrehan.com/portfolio/apple-landing-page-clone"><img style="max-width:220px;" src="https://aftabrehan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.769b2231.png&w=1920&q=75"></a></div> | <div><a href="https://aftabrehan.com/portfolio/apple-landing-page-clone"><img style="max-width:220px;" src="https://aftabrehan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F3.a57973a4.png&w=1920&q=75"></a></div> |
+| <div><a href="https://aftabrehan.com/portfolio/apple-landing-page-clone"><img style="max-width:220px;" src="https://aftabrehan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F4.c42d702c.png&w=1920&q=75"></a></div> | <div><a href="https://aftabrehan.com/portfolio/apple-landing-page-clone"><img style="max-width:220px;" src="https://aftabrehan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F5.861c6175.png&w=1920&q=75"></a></div> | <div><a href="https://aftabrehan.com/portfolio/apple-landing-page-clone"><img style="max-width:220px;" src="https://aftabrehan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F6.a395dd3e.png&w=1920&q=75"></a></div> |
+
+<hr />
 
 ### Getting Started
 
-First, run the development server:
+1. Clone the repository.
 
-```bash
-npm run dev
-# or
+```
+git clone https://github.com/aftabrehan/apple-landing-v2
+```
+
+2. Install the required dependencies.
+
+```
+yarn
+```
+
+3. Start the development server.
+
+```
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-### Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-### Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> [!NOTE]
+> This project is created solely for portfolio purposes, and you are free to use it as you see fit.
