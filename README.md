@@ -25,7 +25,7 @@ The Apple Landing v2 is a clone of the Apple landing page, created using React J
 1. Clone the repository.
 
 ```
-git clone https://github.com/aftabrehan/apple-landing-v2
+git clone https://github.com/aftabrehan/apple-landing-v2.git
 ```
 
 2. Install the required dependencies.
